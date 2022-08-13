@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loginui/screens/MitchKokoLogin.dart';
+import 'package:loginui/screens/coderLoginUI.dart';
 import 'package:loginui/screens/todoLogin.dart';
 import 'package:loginui/screens/verySimpleUI.dart';
 
@@ -61,6 +62,19 @@ class GridWidget extends StatelessWidget {
               },
               child: Center(
                 child: Text('Todo Login UI'),
+              ),
+            ),
+          ),
+          Card(
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => CoderSignInScreen()),
+                );
+              },
+              child: Center(
+                child: Text('Coder Login UI'),
               ),
             ),
           ),

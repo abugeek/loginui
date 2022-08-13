@@ -64,7 +64,7 @@ class _TodoLoginUiState extends State<TodoLoginUi> {
                             borderRadius: BorderRadius.circular(20)),
                         labelText: "Enter your email",
                         suffixIcon: const Icon(Icons.email),
-                        errorStyle: TextStyle(color: Colors.red),
+                        errorStyle: const TextStyle(color: Colors.red),
                       ),
                     ),
                   ),
@@ -102,7 +102,7 @@ class _TodoLoginUiState extends State<TodoLoginUi> {
                       alignment: const Alignment(0, 0.0),
                       child: const Text(
                         "Login",
-                        style: const TextStyle(
+                        style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                     ),
